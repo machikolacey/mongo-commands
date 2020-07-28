@@ -2,7 +2,7 @@ import pymongo
 import os
 if os.path.exists("env.py"):
     import env
-    
+
 MONGODB_URI = os.getenv("MONGO_URI")
 DBS_NAME = "myTestDB"
 COLLECTION_NAME = "myFirstMDB"
@@ -28,7 +28,7 @@ def get_record():
     
     if not doc:
         print("")
-        print("Error! No results found.")
+        print("No results found.")
     
     return doc
 
