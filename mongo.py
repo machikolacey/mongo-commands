@@ -1,5 +1,5 @@
 import os
-from pymongo import MongoClient 
+import pymongo 
 if os.path.exists("env.py"):
     import env
 
